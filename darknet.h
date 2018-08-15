@@ -5,6 +5,10 @@
 #include <string.h>
 #include <pthread.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define SECRET_NUM -1234
 extern int gpu_index;
 
@@ -754,5 +758,9 @@ void normalize_array(float *a, int n);
 int *read_intlist(char *s, int *n, int d);
 size_t rand_size_t();
 float rand_normal();
+
+#ifdef __cplusplus
+}//extern "C"
+#endif
 
 #endif
