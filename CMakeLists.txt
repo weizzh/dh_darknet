@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(test_hpp)
 find_package(OpenCV REQUIRED)
-set(source main.cpp init_test.cpp init_test.hpp dark.c dark.h darknet.h)
+set(source main.cpp init_test.cpp init_test.hpp darknet.h)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_executable(main ${source})
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
